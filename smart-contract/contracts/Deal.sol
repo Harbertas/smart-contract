@@ -1,6 +1,6 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity >=0.4.22 <0.9.0;
 
 contract Deal {
 
@@ -37,7 +37,7 @@ contract Deal {
     uint startTime;
     address payable public executor;
 
-    constructor() {
+    constructor(string memory greeting) {
         executor = payable(msg.sender);
         stage = Stage.SetUp;
         startTime = block.timestamp;

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="player-link switch" href="#p1"> 
+    <button class="connect_button" id="connect_button" onclick="connect()">Connect Metamask</button>
+    </a>
     <div class="container">
         <div class="dice-wrapper">
             <img  id="die-1" src="dice-06.svg">
@@ -18,6 +21,7 @@
         <button id="button" onclick="roll()">ROLL THE DICE</button>
     </div>
     <!--Script-->
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
